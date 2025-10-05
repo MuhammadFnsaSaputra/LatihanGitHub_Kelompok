@@ -16,5 +16,22 @@ namespace LatihanGitHub_Kelompok
         {
             InitializeComponent();
         }
+
+        private void siswaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSiswa fs = new FormSiswa();
+            fs.ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void jurusanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormJurusan fs = new FormJurusan();
+            fs.ShowDialog();
+        }
     }
 }

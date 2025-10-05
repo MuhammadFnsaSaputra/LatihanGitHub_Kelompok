@@ -30,9 +30,9 @@
         {
             menuStrip1 = new MenuStrip();
             menuToolStripMenuItem = new ToolStripMenuItem();
-            exitToolStripMenuItem = new ToolStripMenuItem();
             siswaToolStripMenuItem = new ToolStripMenuItem();
             jurusanToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -53,23 +53,26 @@
             menuToolStripMenuItem.Size = new Size(73, 29);
             menuToolStripMenuItem.Text = "Menu";
             // 
-            // exitToolStripMenuItem
-            // 
-            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(55, 29);
-            exitToolStripMenuItem.Text = "Exit";
-            // 
             // siswaToolStripMenuItem
             // 
             siswaToolStripMenuItem.Name = "siswaToolStripMenuItem";
             siswaToolStripMenuItem.Size = new Size(270, 34);
             siswaToolStripMenuItem.Text = "Siswa";
+            siswaToolStripMenuItem.Click += siswaToolStripMenuItem_Click;
             // 
             // jurusanToolStripMenuItem
             // 
             jurusanToolStripMenuItem.Name = "jurusanToolStripMenuItem";
             jurusanToolStripMenuItem.Size = new Size(270, 34);
             jurusanToolStripMenuItem.Text = "Jurusan";
+            jurusanToolStripMenuItem.Click += jurusanToolStripMenuItem_Click;
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(55, 29);
+            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // FormMenu
             // 
