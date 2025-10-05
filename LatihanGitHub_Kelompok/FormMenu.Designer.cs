@@ -28,12 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormMenu";
+            menuStrip1 = new MenuStrip();
+            menuToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
+            siswaToolStripMenuItem = new ToolStripMenuItem();
+            jurusanToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(24, 24);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, exitToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 33);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            menuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { siswaToolStripMenuItem, jurusanToolStripMenuItem });
+            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            menuToolStripMenuItem.Size = new Size(73, 29);
+            menuToolStripMenuItem.Text = "Menu";
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(55, 29);
+            exitToolStripMenuItem.Text = "Exit";
+            // 
+            // siswaToolStripMenuItem
+            // 
+            siswaToolStripMenuItem.Name = "siswaToolStripMenuItem";
+            siswaToolStripMenuItem.Size = new Size(270, 34);
+            siswaToolStripMenuItem.Text = "Siswa";
+            // 
+            // jurusanToolStripMenuItem
+            // 
+            jurusanToolStripMenuItem.Name = "jurusanToolStripMenuItem";
+            jurusanToolStripMenuItem.Size = new Size(270, 34);
+            jurusanToolStripMenuItem.Text = "Jurusan";
+            // 
+            // FormMenu
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "FormMenu";
+            Text = "FormMenu";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem menuToolStripMenuItem;
+        private ToolStripMenuItem siswaToolStripMenuItem;
+        private ToolStripMenuItem jurusanToolStripMenuItem;
+        private ToolStripMenuItem exitToolStripMenuItem;
     }
 }
