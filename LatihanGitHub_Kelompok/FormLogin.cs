@@ -9,6 +9,7 @@ namespace LatihanGitHub_Kelompok
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            FormMenu fs = new FormMenu();
             MessageBox.Show("Tombol Login ditekan!", "Info");
         }
     }
