@@ -6,5 +6,10 @@ namespace LatihanGitHub_Kelompok
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tombol Login ditekan!", "Info");
+        }
     }
 }
