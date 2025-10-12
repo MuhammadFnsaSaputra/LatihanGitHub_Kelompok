@@ -53,7 +53,7 @@
             // txtUsername
             // 
             txtUsername.Location = new Point(164, 177);
-            txtUsername.Margin = new Padding(4, 4, 4, 4);
+            txtUsername.Margin = new Padding(4);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(666, 31);
             txtUsername.TabIndex = 1;
@@ -82,7 +82,7 @@
             // txtPassword
             // 
             txtPassword.Location = new Point(162, 234);
-            txtPassword.Margin = new Padding(4, 4, 4, 4);
+            txtPassword.Margin = new Padding(4);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(666, 31);
             txtPassword.TabIndex = 4;
@@ -100,7 +100,7 @@
             // btnLogin
             // 
             btnLogin.Location = new Point(162, 419);
-            btnLogin.Margin = new Padding(4, 4, 4, 4);
+            btnLogin.Margin = new Padding(4);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(118, 36);
             btnLogin.TabIndex = 6;
@@ -111,7 +111,7 @@
             // btnBack
             // 
             btnBack.Location = new Point(712, 419);
-            btnBack.Margin = new Padding(4, 4, 4, 4);
+            btnBack.Margin = new Padding(4);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(118, 36);
             btnBack.TabIndex = 7;
@@ -152,9 +152,10 @@
             Controls.Add(txtUsername);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FormLogin";
             Text = "Form1";
+            Load += FormLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
