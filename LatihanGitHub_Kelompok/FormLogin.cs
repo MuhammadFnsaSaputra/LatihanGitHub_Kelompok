@@ -38,7 +38,7 @@ namespace LatihanGitHub_Kelompok
             try
             {
                 conn.Open();
-                string query = "INSERT INTO users (id, username, password) VALUES (@id, @username, @password)";
+                string query = "INSERT INTO login (id, username, password) VALUES (@id, @username, @password)";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id", txtId.Text);
                 cmd.Parameters.AddWithValue("@username", txtUsername.Text);
@@ -49,7 +49,10 @@ namespace LatihanGitHub_Kelompok
                 txtId.Clear();
                 txtUsername.Clear();
                 txtPassword.Clear();
-                txtId.Focus();
+                txtId.Focus(); MessageBox.Show("Login berhasil!");
+                this.Hide();
+                FormMenu menu = new FormMenu();
+                menu.Show();
             }
             catch (Exception ex)
             {
