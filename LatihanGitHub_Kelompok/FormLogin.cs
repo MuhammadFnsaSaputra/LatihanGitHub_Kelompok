@@ -1,4 +1,5 @@
 using System.Data;
+using MySql.Data.MySqlClient;
 
 
 namespace LatihanGitHub_Kelompok
@@ -11,7 +12,7 @@ namespace LatihanGitHub_Kelompok
         }
         private void refreshData()
         {
-            MySqlConnection conn = new MySqlConnection("server = localhost;database = dbGithub; uid=root; pwd= ;");
+            MySqlConnection conn = new MySqlConnection("server = localhost;database = dbgithub; uid=root; pwd= ;");
             try
             {
                 conn.Open();
@@ -19,7 +20,7 @@ namespace LatihanGitHub_Kelompok
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
-                dgvMenu.DataSource = dt;
+               
             }
             catch (Exception ex)
             {
@@ -33,7 +34,7 @@ namespace LatihanGitHub_Kelompok
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            MySqlConnection conn = new MySqlConnection("server=localhost;database=DBPerpustakaan;uid=root;pwd=;");
+            MySqlConnection conn = new MySqlConnection("server=localhost;database=dbgithub;uid=root;pwd=;");
             try
             {
                 conn.Open();
