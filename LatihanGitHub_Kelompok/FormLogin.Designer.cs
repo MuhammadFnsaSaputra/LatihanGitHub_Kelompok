@@ -53,6 +53,7 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(534, 27);
             txtUsername.TabIndex = 1;
+            txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // lblUsername
             // 
