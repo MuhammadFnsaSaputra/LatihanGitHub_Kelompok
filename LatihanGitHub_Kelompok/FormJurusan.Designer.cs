@@ -34,14 +34,14 @@
             lblid = new Label();
             lblnisn = new Label();
             lbljurusan = new Label();
-            dataGridView1 = new DataGridView();
-            btnsimpan = new Button();
-            btnhapus = new Button();
-            btnkembali = new Button();
+            dgvJurusan = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            btnsimpan = new Button();
+            btnhapus = new Button();
+            btnkembali = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvJurusan).BeginInit();
             SuspendLayout();
             // 
             // textBox1
@@ -92,42 +92,15 @@
             lbljurusan.TabIndex = 5;
             lbljurusan.Text = "Jurusan :";
             // 
-            // dataGridView1
+            // dgvJurusan
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(68, 344);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(427, 188);
-            dataGridView1.TabIndex = 6;
-            // 
-            // btnsimpan
-            // 
-            btnsimpan.Location = new Point(68, 273);
-            btnsimpan.Name = "btnsimpan";
-            btnsimpan.Size = new Size(94, 29);
-            btnsimpan.TabIndex = 7;
-            btnsimpan.Text = "Simpan";
-            btnsimpan.UseVisualStyleBackColor = true;
-            // 
-            // btnhapus
-            // 
-            btnhapus.Location = new Point(241, 273);
-            btnhapus.Name = "btnhapus";
-            btnhapus.Size = new Size(94, 29);
-            btnhapus.TabIndex = 8;
-            btnhapus.Text = "Hapus";
-            btnhapus.UseVisualStyleBackColor = true;
-            // 
-            // btnkembali
-            // 
-            btnkembali.Location = new Point(401, 273);
-            btnkembali.Name = "btnkembali";
-            btnkembali.Size = new Size(94, 29);
-            btnkembali.TabIndex = 9;
-            btnkembali.Text = "Kembali";
-            btnkembali.UseVisualStyleBackColor = true;
+            dgvJurusan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvJurusan.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dgvJurusan.Location = new Point(68, 344);
+            dgvJurusan.Name = "dgvJurusan";
+            dgvJurusan.RowHeadersWidth = 51;
+            dgvJurusan.Size = new Size(427, 188);
+            dgvJurusan.TabIndex = 6;
             // 
             // Column1
             // 
@@ -150,6 +123,35 @@
             Column3.Name = "Column3";
             Column3.Width = 125;
             // 
+            // btnsimpan
+            // 
+            btnsimpan.Location = new Point(68, 273);
+            btnsimpan.Name = "btnsimpan";
+            btnsimpan.Size = new Size(94, 29);
+            btnsimpan.TabIndex = 7;
+            btnsimpan.Text = "Simpan";
+            btnsimpan.UseVisualStyleBackColor = true;
+            btnsimpan.Click += btnsimpan_Click;
+            // 
+            // btnhapus
+            // 
+            btnhapus.Location = new Point(241, 273);
+            btnhapus.Name = "btnhapus";
+            btnhapus.Size = new Size(94, 29);
+            btnhapus.TabIndex = 8;
+            btnhapus.Text = "Hapus";
+            btnhapus.UseVisualStyleBackColor = true;
+            // 
+            // btnkembali
+            // 
+            btnkembali.Location = new Point(401, 273);
+            btnkembali.Name = "btnkembali";
+            btnkembali.Size = new Size(94, 29);
+            btnkembali.TabIndex = 9;
+            btnkembali.Text = "Kembali";
+            btnkembali.UseVisualStyleBackColor = true;
+            btnkembali.Click += btnkembali_Click;
+            // 
             // FormJurusan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -158,7 +160,7 @@
             Controls.Add(btnkembali);
             Controls.Add(btnhapus);
             Controls.Add(btnsimpan);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvJurusan);
             Controls.Add(lbljurusan);
             Controls.Add(lblnisn);
             Controls.Add(lblid);
@@ -167,7 +169,7 @@
             Controls.Add(textBox1);
             Name = "FormJurusan";
             Text = "FormJurusan";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvJurusan).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -180,7 +182,7 @@
         private Label lblid;
         private Label lblnisn;
         private Label lbljurusan;
-        private DataGridView dataGridView1;
+        private DataGridView dgvJurusan;
         private Button btnsimpan;
         private Button btnhapus;
         private Button btnkembali;

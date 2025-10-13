@@ -16,5 +16,36 @@ namespace LatihanGitHub_Kelompok
         {
             InitializeComponent();
         }
+
+        private void btnsimpan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnkembali_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Apakah Anda Yakin Ingin Kembali Ke Halaman Menu?",
+                "Konfirmasi Kembali",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+
+                FormMenu formMenu = Application.OpenForms["FormMenu"] as FormMenu;
+
+                if (formMenu == null)
+                {
+                    formMenu = new FormMenu();
+                    formMenu.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Kembali Dilakukan.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
     }
 }
